@@ -10,3 +10,9 @@ $ heroku ps:scale worker=1
 ```bash
 $ heroku logs --tail
 ```
+
+### Add git remote
+
+```bash
+$ heroku git:remote -a APP_NAME
+```
