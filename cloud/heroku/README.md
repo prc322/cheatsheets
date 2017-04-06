@@ -16,3 +16,9 @@ $ heroku logs --tail
 ```bash
 $ heroku git:remote -a APP_NAME
 ```
+
+### Batch delete apps with grep
+
+```bash
+$ heroku apps | grep review | while read line; do heroku apps:destroy -a $line --confirm=$line; done
+```
