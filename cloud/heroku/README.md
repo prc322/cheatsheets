@@ -1,3 +1,15 @@
+### Create app
+
+```bash
+$ heroku create MY_APP_NAME
+```
+
+### Add mongodb from mlab
+
+```bash
+$ heroku addons:create mongolab:sandbox
+```
+
 ### Scaling dynos
 
 ```bash
