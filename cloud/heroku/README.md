@@ -4,10 +4,11 @@
 $ heroku create MY_APP_NAME
 ```
 
-### Add mongodb from mlab
+### Add addons
 
 ```bash
 $ heroku addons:create mongolab:sandbox
+$ heroku addons:create heroku-redis:hobby-dev
 ```
 
 ### Scaling dynos
