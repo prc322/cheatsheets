@@ -11,6 +11,13 @@ $ heroku addons:create mongolab:sandbox
 $ heroku addons:create heroku-redis:hobby-dev
 ```
 
+### Add a domain to an an app wait for it
+
+```bash
+$ heroku domains:add app.example.io --app app-18406
+$ heroku domains:wait 'app.example.io'
+```
+
 ### Scaling dynos
 
 ```bash
