@@ -15,7 +15,7 @@ $ heroku addons:create heroku-redis:hobby-dev
 
 ```bash
 $ heroku domains:add app.example.io --app app-18406
-$ heroku domains:wait 'app.example.io'
+$ heroku domains:wait 'app.example.io' --app app-18406
 ```
 
 ### Scaling dynos
