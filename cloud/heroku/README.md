@@ -11,6 +11,17 @@ $ heroku addons:create mongolab:sandbox
 $ heroku addons:create heroku-redis:hobby-dev
 ```
 
+### Create Pipeline
+```bash
+# you need at least one app to create a pipeline
+$ heroku pipelines:create PIPELINE_NAME -a APP_NAME -s production
+```
+
+### Add app to pipeline
+```bash
+$ heroku pipelines:add PIPELINE_NAME -a APP_NAME -s staging
+```
+
 ### Add a domain to an an app wait for it
 
 ```bash
