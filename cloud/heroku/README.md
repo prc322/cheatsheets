@@ -11,6 +11,12 @@ $ heroku addons:create mongolab:sandbox
 $ heroku addons:create heroku-redis:hobby-dev
 ```
 
+### Set config variables
+
+```bash
+$ heroku config:set API_URL=http://api238.herokuapps.com
+```
+
 ### Create Pipeline
 ```bash
 # you need at least one app to create a pipeline
