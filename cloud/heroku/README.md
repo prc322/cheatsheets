@@ -60,3 +60,9 @@ $ heroku git:remote --remote REMOTE_NAME --app APP_NAME
 ```bash
 $ heroku apps | grep review | while read line; do heroku apps:destroy -a $line --confirm=$line; done
 ```
+
+### Push current git branch to heroku master
+
+```bash
+$ git push heroku +HEAD:master
+```
