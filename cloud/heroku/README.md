@@ -17,7 +17,7 @@ $ heroku addons:create heroku-redis:hobby-dev
 $ heroku config:set API_URL=http://api238.herokuapps.com
 ```
 
-### Create Pipeline
+### Create a pipeline
 ```bash
 # you need at least one app to create a pipeline
 $ heroku pipelines:create PIPELINE_NAME -a APP_NAME -s production
@@ -28,7 +28,7 @@ $ heroku pipelines:create PIPELINE_NAME -a APP_NAME -s production
 $ heroku pipelines:add PIPELINE_NAME -a APP_NAME -s staging
 ```
 
-### Add a domain to an an app wait for it
+### Add a domain to an app and wait for it
 
 ```bash
 $ heroku domains:add app.example.io --app app-18406
@@ -61,7 +61,7 @@ $ heroku git:remote --remote REMOTE_NAME --app APP_NAME
 $ heroku apps | grep review | while read line; do heroku apps:destroy -a $line --confirm=$line; done
 ```
 
-### Push current git branch to heroku master
+### Push current git branch to Heroku master
 
 ```bash
 $ git push heroku +HEAD:master
