@@ -12,7 +12,8 @@ $ docker pull ubuntu
 # -t opens a terminal session within the container
 # -i keeps the STDIN open so we can read from and write to it
 # --rm removes the container after it exits
-$ docker run --rm -it ubuntu/amazing-things
+# -p 8080:80 binds the hosts' port 8080 to the containers' port 80
+$ docker run --rm -it -p 8080:80 ubuntu/amazing-things
 ```
 
 ### Start container with custom entry point and arguments
