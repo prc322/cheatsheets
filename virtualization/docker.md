@@ -31,6 +31,12 @@ docker run --rm --entrypoint /bin/bash ubuntu/entry /root/myscript.sh
 docker run -it --rm -v /var/dev/:/dev ubuntu/review
 ```
 
+### Run executables inside a container
+
+```bash
+docker exec keen_wilson /bin/bash -c "ls -l /root"
+```
+
 ### Show images
 
 ```bash
