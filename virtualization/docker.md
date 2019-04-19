@@ -11,7 +11,7 @@ $ docker pull ubuntu
 ```bash
 # -t opens a terminal session within the container
 # -i keeps the STDIN open so we can read from and write to it
-# --rm removes the container after it exists
+# --rm removes the container after it exits
 $ docker run --rm -it ubuntu/amazing-things
 ```
 
