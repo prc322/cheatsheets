@@ -23,6 +23,14 @@ $ docker run --rm -it ubuntu/amazing-things
 docker run --rm --entrypoint /bin/bash ubuntu/entry /root/myscript.sh
 ```
 
+### Mount a folder of the host system
+
+```bash
+# /var/dev is a path on the host systems
+# /dev is the mounted path within the container
+docker run -it --rm -v /var/dev/:/dev ubuntu/review
+```
+
 ### Show images
 
 ```bash
