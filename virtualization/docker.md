@@ -3,7 +3,7 @@
 ### Create a docker-machine on AWS at the eu central region
 
 ```bash
-$ docker-machine create --driver amazonec2 --amazonec2-region us-west-1 eu-central-1 my-aws-vm
+$ docker-machine create --driver amazonec2 --amazonec2-region eu-central-1 my-aws-vm
 ```
 
 ### Pull an image
