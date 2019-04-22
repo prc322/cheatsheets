@@ -80,3 +80,10 @@ $ docker tag bcb09f5490383b7d2a2206653b1e19cfbc018a1284fb22b96ccdd9e5dfbaecc0 ub
 ```bash
 $ docker image rm 250782f08d6a
 ```
+
+
+### Build the current folder as image
+
+```bash
+$ docker build -t myImageName .
+```
