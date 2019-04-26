@@ -9,3 +9,12 @@ $ find . -type f -print0 | xargs -0 grep -l "what you want to find"
 ```bash
 $ for f in *.mp4; do mv -- "$f" "$(date -r "$f" +%Y_%m_%d-%H_%M.mp4)"; done
 ```
+
+### Do something for each line of an output
+
+```bash
+for image $(docker images -q);
+do
+  docker image rm $image
+done
+```
