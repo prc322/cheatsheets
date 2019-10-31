@@ -16,7 +16,7 @@ $ chmod 400 id_*
 ## copy public key to remote
 
 ```bash
-$ ssh-copy-id user@remote
+$ ssh-copy-id -i /Volumes/keydrive/id_rsa user@remote
 ```
 
 ## login with key from specfic location
